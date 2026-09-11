@@ -1,24 +1,33 @@
-/cmake_gcc/
-/cmake_llvm/
+# Build outputs
+/cmake_gcc/build/
+/cmake_llvm/build/
 /artifacts/
 
-/autogen/
+# Machine-specific generated tool paths
+/cmake_gcc/autogen_toolchain.cmake
+/cmake_llvm/autogen_toolchain.cmake
 
-.projectlinkstore
-vscode.conf
-.settings/
+# SLC regeneration caches and generated reports
+/autogen/.slc_state/
+/autogen/sbom/
 
-*.project.mak
-
+# Local SDK link/copy
 /simplicity_sdk_*/
 
+# Local IDE state
+.projectlinkstore
+.settings/
 .vscode/
+.idea/
+.claude/
 .DS_Store
 Thumbs.db
 *.swp
 
-.idea/
+# Legacy generated Make dependency list
+*.project.mak
 
+# Compiler outputs
 *.o
 *.d
 *.axf
@@ -27,4 +36,3 @@ Thumbs.db
 *.hex
 *.s37
 *.map
-.claude/
