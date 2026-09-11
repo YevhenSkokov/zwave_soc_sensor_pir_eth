@@ -244,10 +244,9 @@ ApplicationTask(SApplicationHandles* pAppHandles)
   ZPAL_LOG_DEBUG(ZPAL_LOG_APP, "\r\nCompletedSleepDurationMs   =%u", GetCompletedSleepDurationMs());
 
 #ifdef SL_CATALOG_ZW_CLI_SLEEPING_PRESENT
-  // Stay awake to allow user to send the prevent sleeping command through the CLI
-  if (GetResetReason() == ZPAL_RESET_REASON_PIN) {
-    zw_cli_sleeping_util_prevent_sleeping_timeout(ZW_CLI_SLEEPING_WAKEUP_TIME_AFTER_RESET);
-  }
+  // This is a mains-powered test fixture.
+  // Keep the CLI available after every reset and power cycle.
+  zw_cli_sleeping_util_prevent_sleeping(true);
 #endif
 
   // Wait for and process events

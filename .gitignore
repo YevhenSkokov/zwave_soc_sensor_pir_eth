@@ -17,6 +17,8 @@ vscode.conf
 Thumbs.db
 *.swp
 
+.idea/
+
 *.o
 *.d
 *.axf
@@ -25,3 +27,4 @@ Thumbs.db
 *.hex
 *.s37
 *.map
+.claude/
