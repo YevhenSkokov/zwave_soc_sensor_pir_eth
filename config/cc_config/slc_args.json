@@ -1,0 +1,6 @@
+{
+  "sdkRoot" : "/Users/evgenskokov/.silabs/slt/installs/conan/p/simpleca33d691c539/p/",
+  "apackRoot" : "/Users/evgenskokov/.silabs/slt/installs/conan/p/simpleca33d691c539/p/zwave_cc_configurator",
+  "partOpn" : "zgm230sb27hgn",
+  "boards" : "brd4205brevA01,brd4002arevA07"
+}
