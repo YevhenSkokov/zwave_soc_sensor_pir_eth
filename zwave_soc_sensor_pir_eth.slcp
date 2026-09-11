@@ -978,9 +978,7 @@ configuration:
   value: '9600'
 - name: SL_IOSTREAM_EUSART_VCOM_ENABLE_HIGH_FREQUENCY
   value: '0'
-- condition:
-  - brd4204a
-  name: ZW_CLI_SLEEPING_WAKEUP_EM1
+- name: ZW_CLI_SLEEPING_WAKEUP_EM1
   value: '1'
 ui_hints:
   highlight:
